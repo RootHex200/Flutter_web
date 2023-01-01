@@ -31,7 +31,8 @@ class Home_page extends StatelessWidget {
           SizedBox(height: 50,),
           Divider(color: Colors.white,thickness: 1,),
      
-          Footer()
+          Footer(),
+          SizedBox(height: 30,)
           ]),
       ),
     );

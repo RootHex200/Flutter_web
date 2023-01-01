@@ -51,11 +51,16 @@ class Project_demo1 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20, right: 10),
                     child: Align(
                         alignment: Alignment.topRight,
-                        child: Image(
-                          color: Colors.white,
-                          // height: 20,
-                          image: AssetImage(icon_list[2]),
-                          fit: BoxFit.cover,
+                        child: InkWell(
+                                                    onTap: (){
+                            html.window.open("https://github.com/RootHex200/Flutter_web", 'new tab');
+                          },
+                          child: Image(
+                            color: Colors.white,
+                            // height: 20,
+                            image: AssetImage(icon_list[2]),
+                            fit: BoxFit.cover,
+                          ),
                         )),
                   ),
                   Text(
@@ -115,11 +120,16 @@ class Project_demo1 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20, right: 10),
                     child: Align(
                         alignment: Alignment.topRight,
-                        child: Image(
-                          color: Colors.white,
-                          // height: 20,
-                          image: AssetImage(icon_list[2]),
-                          fit: BoxFit.cover,
+                        child: InkWell(
+                                                    onTap: (){
+                            html.window.open("https://github.com/RootHex200/Flutter_web", 'new tab');
+                          },
+                          child: Image(
+                            color: Colors.white,
+                            // height: 20,
+                            image: AssetImage(icon_list[2]),
+                            fit: BoxFit.cover,
+                          ),
                         )),
                   ),
                   Text(
@@ -187,7 +197,7 @@ class Project_demo1 extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 20, right: 10),
                         child: InkWell(
                           onTap: (){
-                            html.window.open("", 'new tab');
+                            html.window.open("https://github.com/RootHex200/Flutter_web", 'new tab');
                           },
                           child: Align(
                               alignment: Alignment.topRight,

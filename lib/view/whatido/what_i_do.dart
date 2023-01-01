@@ -257,7 +257,7 @@ class What_i_do extends StatelessWidget {
                 Container(
                   width: MediaQuery.of(context).size.width - 100,
                   child: AutoSizeText(
-                    rest_api,
+                    ctf,
                     textAlign: TextAlign.justify,
                     style: TextStyle(fontSize: 18, color: Colors.white),
                   ),

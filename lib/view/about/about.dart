@@ -1,12 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:sabitur_portfolio/model/responsive.dart';
 import 'package:sabitur_portfolio/utils/colors.dart';
 import 'package:sabitur_portfolio/utils/const.dart';
 import 'dart:html' as html;
+
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
 
@@ -17,7 +15,6 @@ class About extends StatelessWidget {
         web: web_part(context),
         tablet: web_part(context));
   }
-
 
   Widget web_part(context) {
     return Container(
@@ -43,7 +40,7 @@ class About extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Container(
+              SizedBox(
                 width: 430,
                 child: AutoSizeText(
                   about_details,
@@ -51,20 +48,19 @@ class About extends StatelessWidget {
                   style: const TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               cv_dowload()
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
-          CircleAvatar(
+          const CircleAvatar(
             radius: 100,
-            backgroundImage: AssetImage("assets/images/sabitur.jpg"),
+            backgroundImage: AssetImage("assets/images/sabitur.png"),
           ),
-
         ],
       ),
     );
@@ -85,7 +81,7 @@ class About extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Container(
+          SizedBox(
             width: 430,
             child: AutoSizeText(
               about_details,
@@ -104,10 +100,9 @@ class About extends StatelessWidget {
             alignment: Alignment.center,
             child: CircleAvatar(
               radius: 100,
-              backgroundImage: AssetImage("assets/images/sabitur.jpg"),
+              backgroundImage: AssetImage("assets/images/sabitur.png"),
             ),
           )
-
         ],
       ),
     );
@@ -116,13 +111,15 @@ class About extends StatelessWidget {
   Widget cv_dowload() {
     return ElevatedButton(
         onPressed: () {
-          html.window.open("https://drive.google.com/file/d/1euJthlZB9TS5bONNx1dZNWGPdU-DfNLc/view?usp=sharing", 'new tab');
+          html.window.open(
+              "https://drive.google.com/file/d/1Rt1D9ieCZpfgmichRuK0BLNUwyTyywh8/view?usp=share_link",
+              'new tab');
         },
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Appcolor.primary)),
-        child: Text(
+        child: const Text(
           "Download CV",
-          style: TextStyle(color: Colors.white,fontSize: 20),
+          style: TextStyle(color: Colors.white, fontSize: 20),
         ));
   }
 }

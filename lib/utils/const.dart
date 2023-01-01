@@ -12,14 +12,14 @@ List open_link = [
   "https://github.com/RootHex200?tab=repositories",
   "https://www.linkedin.com/in/roothex200/",
   "sabiturrahman60@gmail.com"
-
-
 ];
 String about_title =
     "Sabitur Rahman"; //"I'm a developer aiming to build things that spark joy";
 
-String about_details =
-    "I believe software should be great for everyone--those who wirte it and those who use it -- and that bringing joy to problem-solving is the key to that.";
+//String about_details2 =
+    //"I believe software should be great for everyone--those who wirte it and those who use it -- and that bringing joy to problem-solving is the key to that.";
+
+String about_details = "I am a Flutter developer.I have been working for one year in this field. My specialties is Flutter. I have done several projects. The other specialty I am self though developer. I love to code.";
 
 String project = "Projects";
 
@@ -31,7 +31,7 @@ String project_title2 =
 String personal_webiste = "Personal Website";
 
 String personal_website_descr =
-    "The website you're seeing right now.Designed to be pretty ,simple,and lightwight.";
+    "The website you're seeing right now.Designed to be pretty ,simple,and lightwight.It was made with Flutter";
 
 String food = "Food Station";
 
@@ -43,9 +43,9 @@ String task = "Task Manager";
 String task_details =
     "Task Manager is android version app that save task and help to complete work easily.The app was made with Flutter as a Frontend Technology and Node js as a Backend Technology.";
 
-String wallpaper = "Wallpaper Station";
-String wallpaper_details =
-    "Wallpaper is andorid version app.This app help to get wallpaper easily.The app was made with Flutter as frontend technology and node js as a Backend Technology.";
+String reminder = "Reminder";
+String reminder_details =
+    "Reminder is android version app that save task and help to updated daily activities easily.The app was made with Flutter as a Frontend Technology.";
 
 String front_end =
     "My Specialty is Front-End Design. I design responsive websites and mobile apps. My Core Technology is Flutter";
