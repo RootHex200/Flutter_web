@@ -1,11 +1,16 @@
+
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:sabitur_portfolio/model/responsive.dart';
+// ignore: avoid_web_libraries_in_flutter
 import 'dart:html' as html;
 import '../../utils/const.dart';
 
-class Project_demo2 extends StatelessWidget {
-  const Project_demo2({Key? key}) : super(key: key);
+//https://github.com/RootHex200/Wallpaper_station
+
+// ignore: camel_case_types
+class Project_demo5 extends StatelessWidget {
+  const Project_demo5({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +23,7 @@ class Project_demo2 extends StatelessWidget {
   Widget web_part(context) {
     return Container(
       width: MediaQuery.of(context).size.width / 2,
-      height: 200,
+      height: 225,
       decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
           borderRadius: BorderRadius.circular(20)),
@@ -32,7 +37,7 @@ class Project_demo2 extends StatelessWidget {
                     topLeft: Radius.circular(20),
                     bottomLeft: Radius.circular(20)),
                 image: DecorationImage(
-                    image: AssetImage('assets/images/food.png'),
+                    image: AssetImage('assets/images/auction.png'),
                     fit: BoxFit.fill)),
           ),
           const SizedBox(
@@ -48,22 +53,45 @@ class Project_demo2 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20, right: 10),
                     child: Align(
                         alignment: Alignment.topRight,
-                        child: InkWell(
-                          onTap: () {
-                            html.window.open(
-                                "https://github.com/RootHex200/Hali-Shop-app",
-                                'new tab');
-                          },
-                          child: Image(
-                            color: Colors.white,
-                            // height: 20,
-                            image: AssetImage(icon_list[2]),
-                            fit: BoxFit.cover,
+                        child: Container(
+                          width: 70,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://github.com/RootHex200/Auction-App",
+                                  'new tab');
+                            },
+                            child: Image(
+                              color: Colors.white,
+                              // height: 20,
+                              image: AssetImage(icon_list[2]),
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        )),
+                         const SizedBox(width: 20,),
+                          InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://drive.google.com/file/d/10P2IgMyglC76n2URLKnZA0UPdb-bXxmg/view?usp=share_link",
+                                  'new tab');
+                            },
+                            child: const Image(
+                              color: Colors.white,
+                              height: 20,
+                              image: AssetImage("assets/images/playstore.png"),
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                            ],
+                          ),
+                        )
+                        ),
                   ),
                   Text(
-                    hali,
+                    auction,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -73,7 +101,7 @@ class Project_demo2 extends StatelessWidget {
                     height: 15,
                   ),
                   AutoSizeText(
-                    hali_detials,
+                    auction_details,
                     textAlign: TextAlign.justify,
                     style: const TextStyle(fontSize: 15, color: Colors.white),
                   )
@@ -89,7 +117,7 @@ class Project_demo2 extends StatelessWidget {
   Widget tablet_part(context) {
     return Container(
       margin: const EdgeInsets.only(left: 90, right: 90),
-      height: MediaQuery.of(context).size.width <= 774.0 ? 250 : 200,
+      height: MediaQuery.of(context).size.width <= 774.0 ? 275 : 225,
       decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
           borderRadius: BorderRadius.circular(20)),
@@ -103,7 +131,7 @@ class Project_demo2 extends StatelessWidget {
                     topLeft: Radius.circular(20),
                     bottomLeft: Radius.circular(20)),
                 image: DecorationImage(
-                    image: AssetImage('assets/images/food.png'),
+                    image: AssetImage('assets/images/auction.png'),
                     fit: BoxFit.fill)),
           ),
           const SizedBox(
@@ -119,22 +147,45 @@ class Project_demo2 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20, right: 10),
                     child: Align(
                         alignment: Alignment.topRight,
-                        child: InkWell(
-                          onTap: () {
-                            html.window.open(
-                                "https://github.com/RootHex200/Hali-Shop-app",
-                                'new tab');
-                          },
-                          child: Image(
-                            color: Colors.white,
-                            // height: 20,
-                            image: AssetImage(icon_list[2]),
-                            fit: BoxFit.cover,
+                        child: Container(
+                          width: 70,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://github.com/RootHex200/Auction-App",
+                                  'new tab');
+                            },
+                            child: Image(
+                              color: Colors.white,
+                              // height: 20,
+                              image: AssetImage(icon_list[2]),
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        )),
+                         const SizedBox(width: 20,),
+                          InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://drive.google.com/file/d/10P2IgMyglC76n2URLKnZA0UPdb-bXxmg/view?usp=share_link",
+                                  'new tab');
+                            },
+                            child: const Image(
+                              color: Colors.white,
+                              height: 20,
+                              image: AssetImage("assets/images/playstore.png"),
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                            ],
+                          ),
+                        )
+                        ),
                   ),
                   Text(
-                    hali,
+                    auction,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -144,7 +195,7 @@ class Project_demo2 extends StatelessWidget {
                     height: 15,
                   ),
                   AutoSizeText(
-                    hali_detials,
+                    auction_details,
                     textAlign: TextAlign.justify,
                     style: const TextStyle(fontSize: 15, color: Colors.white),
                   )
@@ -160,7 +211,7 @@ class Project_demo2 extends StatelessWidget {
   Widget mobile_part(context) {
     return FittedBox(
       child: Container(
-        height: 250,
+        height: 275,
         width: 500,
         margin: const EdgeInsets.only(left: 20, right: 20),
         decoration: BoxDecoration(
@@ -180,13 +231,13 @@ class Project_demo2 extends StatelessWidget {
                         topLeft: Radius.circular(20),
                       ),
                       image: DecorationImage(
-                          image: AssetImage('assets/images/food.png'),
+                          image: AssetImage('assets/images/auction.png'),
                           fit: BoxFit.fill)),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 60),
                   child: Text(
-                    hali,
+                    auction,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -197,19 +248,42 @@ class Project_demo2 extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 20, right: 10),
                   child: Align(
                       alignment: Alignment.topRight,
-                      child: InkWell(
-                        onTap: () {
-                          html.window.open(
-                              "https://github.com/RootHex200/Hali-Shop-app",
-                              'new tab');
-                        },
-                        child: Image(
-                          color: Colors.white,
-                          // height: 20,
-                          image: AssetImage(icon_list[2]),
-                          fit: BoxFit.cover,
-                        ),
-                      )),
+                      child:  Container(
+                          width: 70,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://github.com/RootHex200/Auction-App",
+                                  'new tab');
+                            },
+                            child: Image(
+                              color: Colors.white,
+                              // height: 20,
+                              image: AssetImage(icon_list[2]),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                         const SizedBox(width: 20,),
+                          InkWell(
+                            onTap: () {
+                              html.window.open(
+                                  "https://drive.google.com/file/d/10P2IgMyglC76n2URLKnZA0UPdb-bXxmg/view?usp=share_link",
+                                  'new tab');
+                            },
+                            child: const Image(
+                              color: Colors.white,
+                              height: 20,
+                              image: AssetImage("assets/images/playstore.png"),
+                              fit: BoxFit.cover,
+                            ),
+                          )
+                            ],
+                          ),
+                        )
+                      ),
                 ),
               ],
             ),
@@ -223,7 +297,7 @@ class Project_demo2 extends StatelessWidget {
                       height: 15,
                     ),
                     AutoSizeText(
-                      hali_detials,
+                      auction_details,
                       textAlign: TextAlign.justify,
                       style: const TextStyle(fontSize: 15, color: Colors.white),
                     )

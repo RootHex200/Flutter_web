@@ -1,11 +1,17 @@
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:flutter/material.dart';
-import 'package:sabitur_portfolio/model/responsive.dart';
-import 'dart:html' as html;
-import '../../utils/const.dart';
 
-class Project_demo2 extends StatelessWidget {
-  const Project_demo2({Key? key}) : super(key: key);
+
+
+import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:sabitur_portfolio/model/responsive.dart';
+
+import '../../utils/const.dart';
+import 'dart:html' as html;
+class Project_demo6 extends StatelessWidget {
+  const Project_demo6({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +20,7 @@ class Project_demo2 extends StatelessWidget {
         web: web_part(context),
         tablet: tablet_part(context));
   }
-
+//https://github.com/RootHex200/Fullstack-taskmanager
   Widget web_part(context) {
     return Container(
       width: MediaQuery.of(context).size.width / 2,
@@ -32,7 +38,7 @@ class Project_demo2 extends StatelessWidget {
                     topLeft: Radius.circular(20),
                     bottomLeft: Radius.circular(20)),
                 image: DecorationImage(
-                    image: AssetImage('assets/images/food.png'),
+                    image: AssetImage('assets/images/bdresult.png'),
                     fit: BoxFit.fill)),
           ),
           const SizedBox(
@@ -49,10 +55,8 @@ class Project_demo2 extends StatelessWidget {
                     child: Align(
                         alignment: Alignment.topRight,
                         child: InkWell(
-                          onTap: () {
-                            html.window.open(
-                                "https://github.com/RootHex200/Hali-Shop-app",
-                                'new tab');
+                          onTap: (){
+                               html.window.open("https://github.com/RootHex200/BD_Result", 'new tab');
                           },
                           child: Image(
                             color: Colors.white,
@@ -63,7 +67,7 @@ class Project_demo2 extends StatelessWidget {
                         )),
                   ),
                   Text(
-                    hali,
+                    bdresult,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -73,7 +77,7 @@ class Project_demo2 extends StatelessWidget {
                     height: 15,
                   ),
                   AutoSizeText(
-                    hali_detials,
+                   bdresult_details,
                     textAlign: TextAlign.justify,
                     style: const TextStyle(fontSize: 15, color: Colors.white),
                   )
@@ -88,8 +92,8 @@ class Project_demo2 extends StatelessWidget {
 
   Widget tablet_part(context) {
     return Container(
-      margin: const EdgeInsets.only(left: 90, right: 90),
-      height: MediaQuery.of(context).size.width <= 774.0 ? 250 : 200,
+      margin: EdgeInsets.only(left: 90,right: 90),
+      height:MediaQuery.of(context).size.width<=774.0?250: 200,
       decoration: BoxDecoration(
           color: Colors.grey.withOpacity(0.2),
           borderRadius: BorderRadius.circular(20)),
@@ -103,7 +107,7 @@ class Project_demo2 extends StatelessWidget {
                     topLeft: Radius.circular(20),
                     bottomLeft: Radius.circular(20)),
                 image: DecorationImage(
-                    image: AssetImage('assets/images/food.png'),
+                    image: AssetImage('assets/images/bdresult.png'),
                     fit: BoxFit.fill)),
           ),
           const SizedBox(
@@ -120,10 +124,8 @@ class Project_demo2 extends StatelessWidget {
                     child: Align(
                         alignment: Alignment.topRight,
                         child: InkWell(
-                          onTap: () {
-                            html.window.open(
-                                "https://github.com/RootHex200/Hali-Shop-app",
-                                'new tab');
+                                                    onTap: (){
+                               html.window.open("https://github.com/RootHex200/BD_Result", 'new tab');
                           },
                           child: Image(
                             color: Colors.white,
@@ -134,7 +136,7 @@ class Project_demo2 extends StatelessWidget {
                         )),
                   ),
                   Text(
-                    hali,
+                    bdresult,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -144,7 +146,7 @@ class Project_demo2 extends StatelessWidget {
                     height: 15,
                   ),
                   AutoSizeText(
-                    hali_detials,
+                    bdresult_details,
                     textAlign: TextAlign.justify,
                     style: const TextStyle(fontSize: 15, color: Colors.white),
                   )
@@ -157,80 +159,80 @@ class Project_demo2 extends StatelessWidget {
     );
   }
 
-  Widget mobile_part(context) {
+
+  Widget mobile_part(context){
     return FittedBox(
       child: Container(
         height: 250,
         width: 500,
-        margin: const EdgeInsets.only(left: 20, right: 20),
+        margin: EdgeInsets.only(left: 20,right: 20),
         decoration: BoxDecoration(
             color: Colors.grey.withOpacity(0.2),
             borderRadius: BorderRadius.circular(20)),
         child: Column(
           children: [
             Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  width: 250,
-                  height: 150,
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: 250,
+                height: 150,
+                decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
+                    ),
+                    image: DecorationImage(
+                        image: AssetImage('assets/images/bdresult.png'),
+                        fit: BoxFit.fill)),
+              ),
+                                  Padding(
+                                    padding: EdgeInsets.only(top: 60),
+                                    child: Text(
+                                                        bdresult,
+                                                        style: const TextStyle(
+                                                            fontWeight: FontWeight.bold,
+                                                            color: Colors.white,
+                                                            fontSize: 20),
+                                                      ),
+                                  ),
+              Padding(
+                        padding: const EdgeInsets.only(top: 20, right: 10),
+                        child: Align(
+                            alignment: Alignment.topRight,
+                            child: InkWell(
+                                                        onTap: (){
+                               html.window.open("https://github.com/RootHex200/BD_Result", 'new tab');
+                          },
+                              child: Image(
+                                color: Colors.white,
+                                // height: 20,
+                                image: AssetImage(icon_list[2]),
+                                fit: BoxFit.cover,
+                              ),
+                            )),
                       ),
-                      image: DecorationImage(
-                          image: AssetImage('assets/images/food.png'),
-                          fit: BoxFit.fill)),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 60),
-                  child: Text(
-                    hali,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        fontSize: 20),
+            ],
+          ),
+                      Expanded(
+                child: Container(
+                  
+                  margin: const EdgeInsets.only(right: 10,left: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      AutoSizeText(
+                        bdresult_details,
+                        textAlign: TextAlign.justify,
+                        style: const TextStyle(fontSize: 15, color: Colors.white),
+                      )
+                    ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 20, right: 10),
-                  child: Align(
-                      alignment: Alignment.topRight,
-                      child: InkWell(
-                        onTap: () {
-                          html.window.open(
-                              "https://github.com/RootHex200/Hali-Shop-app",
-                              'new tab');
-                        },
-                        child: Image(
-                          color: Colors.white,
-                          // height: 20,
-                          image: AssetImage(icon_list[2]),
-                          fit: BoxFit.cover,
-                        ),
-                      )),
-                ),
-              ],
-            ),
-            Expanded(
-              child: Container(
-                margin: const EdgeInsets.only(right: 10, left: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    AutoSizeText(
-                      hali_detials,
-                      textAlign: TextAlign.justify,
-                      style: const TextStyle(fontSize: 15, color: Colors.white),
-                    )
-                  ],
-                ),
-              ),
-            )
+              )
           ],
         ),
       ),

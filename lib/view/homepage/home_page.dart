@@ -2,12 +2,9 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:sabitur_portfolio/utils/row_icon.dart';
 import 'package:sabitur_portfolio/view/about/about.dart';
 import 'package:sabitur_portfolio/view/footer/footer.dart';
 import 'package:sabitur_portfolio/view/header/header.dart';
-import 'package:sabitur_portfolio/view/header/nav_bar.dart';
-import 'package:sabitur_portfolio/view/project/project.dart';
 import 'package:sabitur_portfolio/view/whatido/what_i_do.dart';
 
 class Home_page extends StatelessWidget {

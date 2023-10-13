@@ -3,6 +3,8 @@ import 'package:sabitur_portfolio/model/responsive.dart';
 import 'package:sabitur_portfolio/utils/const.dart';
 import 'package:sabitur_portfolio/view/project/project_demo1.dart';
 import 'package:sabitur_portfolio/view/project/project_demo2.dart';
+import 'package:sabitur_portfolio/view/project/project_demo5.dart';
+import 'package:sabitur_portfolio/view/project/project_demo6.dart';
 import 'package:sabitur_portfolio/view/project/project_demon3.dart';
 import 'package:sabitur_portfolio/view/project/project_demon4.dart';
 
@@ -69,8 +71,15 @@ class Web_part extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
+            const Project_demo6(),
+            const SizedBox(
+              height: 20,
+            ),
+            const Project_demo5(),
+            const SizedBox(
+              height: 20,
+            ),
             const Project_demo4(),
-
             const SizedBox(
               height: 20,
             ),

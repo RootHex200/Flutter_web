@@ -17,9 +17,10 @@ String about_title =
     "Sabitur Rahman"; //"I'm a developer aiming to build things that spark joy";
 
 //String about_details2 =
-    //"I believe software should be great for everyone--those who wirte it and those who use it -- and that bringing joy to problem-solving is the key to that.";
+//"I believe software should be great for everyone--those who wirte it and those who use it -- and that bringing joy to problem-solving is the key to that.";
 
-String about_details = "I am a Flutter developer.I have been working for one year in this field. My specialties is Flutter. I have done several projects. The other specialty I am self though developer. I love to code.";
+String about_details =
+    "I am a Flutter developer.I have been working for one year in this field. My specialties is Flutter. I have done several projects. The other specialty I am self though developer. I love to code.";
 
 String project = "Projects";
 
@@ -33,10 +34,10 @@ String personal_webiste = "Personal Website";
 String personal_website_descr =
     "The website you're seeing right now.Designed to be pretty ,simple,and lightwight.It was made with Flutter";
 
-String food = "Food Station";
+String hali = "Hali shop";
 
-String food_detials =
-    "Food station is android app version.this is another practice project.The app was made with Flutter as a Frontend technology and Firebase as a backend . User can CURD operation";
+String hali_detials =
+    "Hali shop is android app version.this is another practice project.The app was made with Flutter as a Frontend technology and Node js epxress as a backend . User can CURD operation";
 
 String task = "Task Manager";
 
@@ -55,3 +56,11 @@ String rest_api =
 
 String ctf =
     "I am a security researcher on a littler basis. I am learning CTF and Completed IEEE CTF BOOTCAMP 2022";
+
+String auction = "Auction App";
+
+String auction_details = 
+    "In this app user can add new auction post and see all bid list and update bid list in specific date of post.and check dashboard of summary of product.The app was made with Flutter as a Frontend technology and Firebase as a backend";
+
+String bdresult="BD Result";
+String bdresult_details="BD Result is an Android app designed to assist you in quickly accessing your Board Exam results and producing a printable PDF document";

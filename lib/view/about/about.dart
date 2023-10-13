@@ -112,7 +112,7 @@ class About extends StatelessWidget {
     return ElevatedButton(
         onPressed: () {
           html.window.open(
-              "https://drive.google.com/file/d/1Rt1D9ieCZpfgmichRuK0BLNUwyTyywh8/view?usp=share_link",
+              "https://drive.google.com/file/d/1hLF7Y5uaYSmlLe4vlLjQqH2cqCscKB5P/view?usp=share_link",
               'new tab');
         },
         style: ButtonStyle(

@@ -1,19 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:sabitur_portfolio/model/responsive.dart';
 import 'package:sabitur_portfolio/utils/row_icon.dart';
 
-import '../../utils/colors.dart';
-import '../../utils/const.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return  SizedBox(
       width: MediaQuery.of(context).size.width,
       child:MediaQuery.of(context).size.width<=300?
       FittedBox(child: footer_body(),)
@@ -22,10 +17,11 @@ class Footer extends StatelessWidget {
   }
 
 
+    // ignore: non_constant_identifier_names
     Widget footer_body() {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.center,
-      children:const  [
+      children:[
          Padding(
           padding: EdgeInsets.only(left: 10,right: 10),
           child: Text(
